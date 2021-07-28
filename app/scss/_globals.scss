@@ -1,0 +1,113 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-style);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: var(--bg);
+}
+
+.container {
+
+    &-pall {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+
+        @media (min-width: 25em) {
+            padding-left: 6.4375rem;
+            padding-right: 6.4375rem;
+        }
+    }
+
+    &-px {
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+
+        @media (min-width: 25em) {
+            padding-left: 7.4375rem;
+            padding-right: 7.4375rem;
+        }
+    }
+
+    &-py {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &-pt {
+        padding-top: 2rem;
+    }
+
+    &-pb {
+        padding-bottom: 2rem;
+    }
+
+    &-pl {
+        padding-left: 1.5625rem;
+
+        @media (min-width: 25em) {
+            padding-left: 6.4375rem;
+        }
+    }
+
+    &-pr {
+        padding-right: 1.5625rem;
+
+        @media (min-width: 25em) {
+            padding-right: 6.4375rem;
+        }
+    }
+
+    
+
+}
+
+.dark-hover {
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+.light-hover {
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+}

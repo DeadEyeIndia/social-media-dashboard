@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark">
+  <div class="wrapper">
+    
+    <div class="container-pall">
+      <header>
+        <section>
+          <!-- Header headline -->
+          <div class="header-headline">
+            <div class="header-headline-1">
+              Social Media Dashboard
+            </div>
+            <div class="header-headline-2">
+              Total Followers: 23,004
+            </div>
+          </div>
+
+          <!-- Dark/Light Mode -->
+          <div class="header-toggler">
+            <div class="" >Dark Mode</div>
+
+            <div class="toggler" id="toggler">
+              <div class="header-toggler-circle" id="toggler-circle">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Social Media Card Section -->
+        <section class="container-py">
+          <!-- Facebook -->
+          <div class="header-main" id="hover">
+            <div class="header-main-card facebook"  onmouseenter="hoverIn(this)" onmouseleave="hoverOut(this)">
+              <div class="header-main-card-1">
+                <span><img src="./images/icon-facebook.svg" alt="Facebook"></span>
+                <span class="header-main-card-1-name">@nathanf</span>
+              </div>
+              <div class="header-main-card-2">1987</div>
+              <div class="header-main-card-3">Followers</div>
+              <div class="header-main-card-4">
+                <span><img src="./images/icon-up.svg" alt="up"></span>
+                <span class="header-main-card-4-details"style="color: var(--lime-green)">12 Today</span>
+              </div>
+            </div>
+
+            <!-- Twitter -->
+            <div class="header-main-card twitter" onmouseenter="hoverIn(this)" onmouseleave="hoverOut(this)">
+              <div class="header-main-card-1">
+                <span><img src="./images/icon-twitter.svg" alt="Twitter"></span>
+                <span class="header-main-card-1-name">@nathanf</span>
+              </div>
+              <div class="header-main-card-2">1044</div>
+              <div class="header-main-card-3">Followers</div>
+              <div class="header-main-card-4">
+                <span><img src="./images/icon-up.svg" alt="up"></span>
+                <span class="header-main-card-4-details"style="color: var(--lime-green)">99 Today</span>
+              </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="header-main-card instagram" id="" onmouseenter="hoverIn(this)" onmouseleave="hoverOut(this)">
+              <div class="header-main-card-1">
+                <span><img src="./images/icon-instagram.svg" alt="Instagram"></span>
+                <span class="header-main-card-1-name">@realnathanf</span>
+              </div>
+              <div class="header-main-card-2">11K</div>
+              <div class="header-main-card-3">Followers</div>
+              <div class="header-main-card-4">
+                <span><img src="./images/icon-up.svg" alt="up"></span>
+                <span class="header-main-card-4-details"style="color: var(--lime-green)">1099 Today</span>
+              </div>
+            </div>
+
+            <!-- Youtube -->
+            <div class="header-main-card youtube" id="" onmouseenter="hoverIn(this)" onmouseleave="hoverOut(this)">
+              <div class="header-main-card-1">
+                <span><img src="./images/icon-youtube.svg" alt="Youtube"></span>
+                <span class="header-main-card-1-name">Nathan F.</span>
+              </div>
+              <div class="header-main-card-2">8239</div>
+              <div class="header-main-card-3">Subscribers</div>
+              <div class="header-main-card-4">
+                <span><img src="./images/icon-down.svg" alt="down"></span>
+                <span class="header-main-card-4-details"style="color: var(--bright-red)">144 Today</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </header>
+
+      <section class="container-pt">
+        <div class="main-title">
+          Overview - Today
+        </div>
+
+        <div class="main-card">
+          <!-- Facebook Main Card -->
+          <div class="main-card-facebook" >
+            <div class="main-card-facebook-1">
+              <div class="top">
+                <span>Page Views</span><span><img src="./images/icon-facebook.svg" alt=""></span>
+              </div>
+              <div class="bottom">
+                <span>87</span><span><img src="./images/icon-up.svg" alt="">3%</span>
+              </div>
+            </div>
+            <div class="main-card-facebook-2">
+              <div class="top">
+                <span>Likes</span>
+                <span><img src="./images/icon-facebook.svg" alt=""></span>
+              </div>
+              <div class="bottom1">
+                <span>507</span><span><img src="./images/icon-down.svg" alt="">2%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram Main Card -->
+          <div class="main-card-instagram">
+            <div class="main-card-instagram-1">
+              <div class="top">
+                <span>Likes</span><span><img src="./images/icon-instagram.svg" alt=""></span>
+              </div>
+              <div class="bottom">
+                <span>5462</span>
+                <span><img src="./images//icon-up.svg" alt="">2257%</span>
+              </div>
+            </div>
+            <div class="main-card-instagram-2">
+              <div class="top">
+                <span>Profile Views</span>
+                <span><img src="./images/icon-instagram.svg" alt=""></span>
+              </div>
+              <div class="bottom">
+                <span>52k</span>
+                <span><img src="./images/icon-up.svg" alt="">1375%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Twitter Main Card -->
+          <div class="main-card-twitter">
+            <div class="main-card-twitter-1">
+              <div class="top">
+                <span>Retweets</span>
+                <span><img src="./images/icon-twitter.svg" alt=""></span>
+              </div>
+              <div class="bottom">
+                <span>117</span>
+                <span><img src="./images/icon-up.svg" alt="">303%</span>
+              </div>
+            </div>
+            <div class="main-card-twitter-2">
+              <div class="top">
+                <span>Likes</span>
+                <span><img src="./images/icon-twitter.svg" alt=""></span>
+              </div>
+              <div class="bottom">
+                <span>507</span>
+                <span><img src="./images/icon-up.svg" alt="">553%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Youtube Main Card -->
+          <div class="main-card-youtube">
+            <div class="main-card-youtube-1">
+              <div class="top">
+                <span>Likes</span>
+                <span><img src="./images/icon-youtube.svg" alt=""></span>
+              </div>
+              <div class="bottom1">
+                <span>107</span>
+                <span><img src="./images/icon-down.svg" alt="">10%</span>
+              </div>
+            </div>
+            <div class="main-card-youtube-2">
+              <div class="top">
+                <span>Total Views</span>
+                <span><img src="./images/icon-twitter.svg" alt=""></span>
+              </div>
+              <div class="bottom1">
+                <span>1407</span>
+                <span><img src="./images/icon-down.svg" alt="">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/DeadEyeIndia/Frontend-Mentor.git" target="_blank">DeadEyeIndia</a>.
+  </div>
+
+  <script defer src="./app/js/script.js"></script>
+</body>
+</html>
